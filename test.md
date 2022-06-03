@@ -5,7 +5,7 @@
 | file name  | description                               |
 | ---------- | ----------------------------------------- |
 | origin.jpg | original picture                          |
-| output.png | picture modified with hidden information  |
+| test.png | picture modified with hidden information  |
 | info.txt   | hide information                          |
 | info2.txt  | information decoded from modified picture |
 | LSBSteg.py | python script file to encode and decode   |
@@ -64,9 +64,9 @@ def main():
 #modify info.txt with information 
 vi info.txt
 #hide info.txt into origin.jpg
-python LSB-Steganography//LSBSteg.py encode -i origin.jpg -o output.png -f info.txt
-#decode hidden information from output.png to info2.txt
-python LSB-Steganography//LSBSteg.py decode -i output.png -o info2.txt
+python LSB-Steganography//LSBSteg.py encode -i origin.jpg -o test.png -f info.txt
+#decode hidden information from test.png to info2.txt
+python LSB-Steganography//LSBSteg.py decode -i test.png -o info2.txt
 ```
 
 To verify, only need to compare `info.txt` and `info2.txt`.
