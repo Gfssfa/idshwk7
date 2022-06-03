@@ -31,7 +31,7 @@ git clone https://github.com/RobinDavid/LSB-Steganography
 cd LSB-Steganography/
 vi LSBSteg.py
 ```
-
+modify `LSBSteg.py`
 ```python
 def main():
     args = docopt.docopt(__doc__, version="0.2")
